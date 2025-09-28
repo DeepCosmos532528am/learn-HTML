@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder=your_name name="student_name" value="Insane"><!--here name attribute is for-->
+
+        <br><br><!--use <br> for spacing for now-->
+
+        <label for="Contact">Contact:</label>
+        <!--for="Contact"	<label>	Specifies the target input.	Allows users to click on the label text to focus the input.-->
+
+        <input type="number" name="contact_num" required
+            id="Contact"> <!--id="Contact"	<input>	Provides a unique identifier.	Enables screen readers to announce the label for the correct input.Export to Sheets-->
+
+        <br><br>
+
+        <label>email:</label>
+        <input type="email" name="s_email">
+
+        <br><br>
+
+        <hr>
+
+        <label for="Male">Male:</label>
+        <input type="radio" name="gender" id="Male"
+            value="Male"><!-- value attribute tells that which value to go in backend after final input submission -->
+
+
+        <label>Female:</label>
+        <input type="radio" name="gender" value="Female" >
+
+        <label>other:</label>
+        <input type="radio" name="gender" value="other" >
+
+        <hr>
+
+        <br><br>
+        <label for="Java">Java</label>
+        <input type="checkbox" name="subject" id="Java" value="Java">
+        <label for="Kotlin">Kotlin</label>
+        <input type="checkbox" name="subject" id="Kotlin" value="Kotlin">
+        <label for="JavaScript">JavaScript</label>
+        <input type="checkbox" name="subject" id="JavaScript"value="JavaScript">
+
+        <input type="submit">
+
+
+    </form>
+</body>
+
+</html>
+
+<!--
+  NOTE on `name` attribute in form inputs:
+
+  1. The `name` attribute identifies each input field in the form submission data.
+  2. When the form is submitted, the browser sends data as key-value pairs, 
+     where the key is the `name` attribute, and the value is the user input.
+  3. The backend receives this data (e.g., via `request.body.name`) and uses it to process or store in the database.
+  4. The `name` attribute does NOT have to be exactly the same as the database column name.
+     However, keeping them consistent reduces confusion and errors.
+  5. If frontend `name` and DB column differ, backend code must map form data to correct DB columns explicitly.
+  6. If the `name` attribute is NOT provided on an input field, the browser does NOT include that input’s value in the form submission.
+     In other words, the input’s value is ignored and NOT sent to the server.
+  7. Always ensure required fields have proper `name` attributes to enable backend processing.
+
+  Summary: `name` acts as a bridge between frontend form inputs and backend data handling, 
+  enabling seamless data flow from user input to database storage.
+-->

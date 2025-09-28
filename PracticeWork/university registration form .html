@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>University Registration Form</h1> <!--university reg. form-->
+
+    <p>please fill the form below to register</p>
+
+    <hr>
+
+    <h2>Personal Details</h2> <!--personal details-->
+
+    <form>
+
+    <label for="fname">First Name:</label>
+    <input type="text" name="firstname" id="fname" placeholder="e.g.Sachin">
+    <br>
+    <label for="lname">Last Name:=</label>
+    <input type="text" name="lastname" id="lname" placeholder="e.g. Sharma">
+    <br>
+    <label for="DOB">Date of Birth:</label>
+    <input type="date" name="dateofbirth" id="DOB">
+    <br>
+
+    <h3>Gender:</h3> <!--gender-->
+    <input type="radio" name="Gender" value="male" id="Male">
+    <label for="Male">Male</label>
+
+    <br>
+
+    <input type="radio" name="Gender" value="female" id="Female">
+    <label for="Female">Female</label>
+
+    <br>
+
+    <input type="radio" name="Gender" value="other" id="Other">
+    <label for="Other">Other</label>
+
+    <br>
+
+    <label>Upload Your Photo:</label> <!--file upload-->
+    <br>
+    <input type="file" name="photo">
+
+    <hr>
+
+    <h2>Contact Information</h2><!--contact information-->
+
+    <label for="email">Email Address:</label>
+    <input type="email" name="Email_add" id="email" placeholder="xyz@compony.com">
+    <br>
+    <label for="Phone">Phone Number:</label>
+    <input type="tel" name="p_number" id="Phone" placeholder="+91 1234567890">
+    <br>
+
+    <label for="mailadd">Mailing Address:</label>
+    <br>
+    <textarea name="mail_address" id="mailadd" rows="20" cols="30" placeholder="Street, city, ZIP code etc"></textarea>
+
+    <hr>
+
+
+    <h2>Academic Information</h2> <!--Academic information-->
+
+    <label for="courses">Select Your Course:</label>
+    <select name="course" id="courses">
+
+        <option value="Java">Java</option>
+        <option value="Kotlin">Kotlin</option>
+        <option value="JS">JS</option>
+
+    </select>
+
+    <hr>
+
+<label>Extracurricular Interests:</label> <!--Extracurricular Interests-->
+<br>
+<input type="checkbox" name="Interest" id="sports">
+<label for="sports">sports</label>
+<br>
+<input type="checkbox" name="Interest" id="Music & Arts">
+<label for="Music & Arts">Music & Arts</label>
+<br>
+<input type="checkbox" name="Interest" id="Technology Clubs">
+<label for="Technology Clubs">Technology Clubs</label>
+<br>
+<input type="checkbox" name="Interest" id="Volunteering">
+<label for="Volunteering">Volunteering</label>
+
+<hr>
+
+
+<h2>Create Your Account</h2>
+    <label for="pass">create one strong password:</label>
+    <input type="password" name="password" id="pass" placeholder="zyxavgud">
+    <br>
+    <label for="security">security Question:</label>
+    <select name="security_answer" id="security">
+        <option value="what was your first pet's name?">what was your first pet's name?</option>
+        <option value="what was your first techer's name?">what was your first techer's name?</option>
+        <option value="which is your favourite country's name?">which is your favourite country's name?</option>
+    </select>
+    <br>
+    <label for="your secured answer:">your secured answer:</label>
+    <input type="text" name="secured_ans" id="your secured answer:" placeholder="xyz">
+
+<br><br>
+
+    <input type="checkbox"> 
+    <label name="t&c_status">Yes, I agree to All the Terms and Conditions.</label>
+
+    <br><br>
+
+    <button type="submit">register</button>
+    <button type="reset">reset</button>
+    <!-- <input type="submit">
+    <input type="reset"> can use this too, but for flexibilty the button is recommended as on standard basis-->
+</form>
+    
+</body>
+
+</html>

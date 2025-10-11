@@ -1,0 +1,109 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {}
+
+.head {
+    height: 100%;
+    background-color: rgb(152, 13, 13);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo {
+    background-color: antiquewhite;
+    height: 50px;
+    width: 100px;
+
+}
+
+#navbar {
+    background-color: aliceblue;
+    height: 50px;
+    width: 400px;
+}
+
+main {
+    background-color: bisque;
+}
+
+.image {
+    height: 380px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.slogon {
+    margin-top: 20px;
+    height: 60px;
+    background-color: rgb(75, 147, 147);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textline {
+    font-size: 1.875rem;
+}
+
+.boxes {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* flex-direction: column; */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    width: 60%;
+}
+
+/* .row1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+} */
+
+.box {
+    height: 110px;
+    width: 100%;
+    background-color: brown;
+
+}
+
+/* .row2{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 5px;
+}
+
+.box2{
+    height:110px;
+    width: 160px;
+    background-color: rgb(252, 158, 50);
+}
+
+.row3{
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    gap: 10px;
+}   
+
+.box3{
+    height: 110px;
+    width: 320px;
+    background-color: yellowgreen;
+} */

@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.topbar{
+    background-color: rgb(91, 122, 181);
+    display: flex;  
+    justify-content: space-between;
+    padding: 10px 20px;
+   align-items: center;    
+}
+
+.logo img{
+    width: 100px;
+    height: 50px;
+    display: block;
+    border-radius: 20px 0px 20px;
+}
+
+.navlist{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20px;
+}
+
+.home{
+    color: rgb(255, 191, 0);
+}
+
+
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 13px;
+}
+
+.book-now{
+background-color: rgb(255, 255, 255);
+padding: 10px;
+border:solid rgb(255, 191, 0) 3px ;
+color: black;
+font-size: large;
+}
+
+.container{
+    height: 500px;
+    background-color: rgb(68, 104, 176);
+}

@@ -1,0 +1,42 @@
+/* section 1 */
+
+.hero-image{
+    background-color: antiquewhite;
+}
+
+.hero-image img{
+   height: 1;
+   width: 100%;
+   display: block;
+}
+
+/* section 2 */
+
+.featureWrapper{
+   padding: 10px;
+   background-color:  rgba(159, 32, 138, 0.26);
+}
+
+.featuresList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    border: solid .5px  rgba(159, 32, 138, 0.618) ;
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: 15px 0px;
+}
+
+.featureItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+.featureItems img{
+height: 20px;
+}
+

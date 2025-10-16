@@ -1,0 +1,83 @@
+.upperheader {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-bottom: solid 1px;
+    
+}
+
+.logo img {
+    background-color: antiquewhite;
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.texticon {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.texticonuser:hover{
+color: rgb(159, 32, 137);
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    outline: 1px solid grey;
+    flex-grow: 1;
+    max-width: 550px;
+    padding: 15px;
+    gap: 5px;
+    border-radius:2px 2px 2px 2px ;
+    margin-left: -130px;
+}
+
+.searchbar input {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    caret-color: rgb(159, 32, 137);
+}
+
+.useractions {
+   margin-left: -50px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.useract {
+    color: rgb(32, 31, 31);
+    text-decoration: none;
+}
+
+
+.lowernavbar ul{
+    display: flex;
+    text-overflow: scroll;
+    gap: 15px;
+    align-items: center;
+    text-wrap: nowrap;
+    list-style: none;
+    margin:20px 50px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.lowernavbar ul a:hover {
+    color: rgb(159, 32, 137);
+    text-decoration: underline;
+}
